@@ -1,0 +1,60 @@
+<odoo>
+  <data>
+    <!-- explicit list view definition -->
+<!--
+    <record model="ir.ui.view" id="secuencia_productos.list">
+      <field name="name">secuencia_productos list</field>
+      <field name="model">secuencia_productos.secuencia_productos</field>
+      <field name="arch" type="xml">
+        <tree>
+          <field name="name"/>
+          <field name="value"/>
+          <field name="value2"/>
+        </tree>
+      </field>
+    </record>
+-->
+
+    <!-- actions opening views on models -->
+<!--
+    <record model="ir.actions.act_window" id="secuencia_productos.action_window">
+      <field name="name">secuencia_productos window</field>
+      <field name="res_model">secuencia_productos.secuencia_productos</field>
+      <field name="view_mode">tree,form</field>
+    </record>
+-->
+
+    <!-- server action to the one above -->
+<!--
+    <record model="ir.actions.server" id="secuencia_productos.action_server">
+      <field name="name">secuencia_productos server</field>
+      <field name="model_id" ref="model_secuencia_productos_secuencia_productos"/>
+      <field name="state">code</field>
+      <field name="code">
+        action = {
+          "type": "ir.actions.act_window",
+          "view_mode": "tree,form",
+          "res_model": model._name,
+        }
+      </field>
+    </record>
+-->
+
+    <!-- Top menu item -->
+<!--
+    <menuitem name="secuencia_productos" id="secuencia_productos.menu_root"/>
+-->
+    <!-- menu categories -->
+<!--
+    <menuitem name="Menu 1" id="secuencia_productos.menu_1" parent="secuencia_productos.menu_root"/>
+    <menuitem name="Menu 2" id="secuencia_productos.menu_2" parent="secuencia_productos.menu_root"/>
+-->
+    <!-- actions -->
+<!--
+    <menuitem name="List" id="secuencia_productos.menu_1_list" parent="secuencia_productos.menu_1"
+              action="secuencia_productos.action_window"/>
+    <menuitem name="Server to list" id="secuencia_productos" parent="secuencia_productos.menu_2"
+              action="secuencia_productos.action_server"/>
+-->
+  </data>
+</odoo>
