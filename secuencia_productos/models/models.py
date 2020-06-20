@@ -3,9 +3,9 @@
 # from odoo import models, fields, api
 
 
-# class secuencia_productos(models.Model):
-#     _name = 'secuencia_productos.secuencia_productos'
-#     _description = 'secuencia_productos.secuencia_productos'
+# class secuencia__productos(models.Model):
+#     _name = 'secuencia__productos.secuencia__productos'
+#     _description = 'secuencia__productos.secuencia__productos'
 
 #     name = fields.Char()
 #     value = fields.Integer()
